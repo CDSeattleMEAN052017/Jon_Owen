@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    //border: 1px dashed red;
+}
+body {
+    font-family: Arial;
+}
+table {
+    width: 100%;
+}
+div, form {
+    border: 3px solid black;
+    border-radius: 2px;
+    margin: 50px auto;
+    padding: 30px;
+    width: 400px;
+}
+textarea {
+    width: 100%;
+    height: 70px;
+}
+h3 {
+    padding: 2px;
+    position: absolute;
+    top: 39px;
+    background: white;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin: 4px 0px;
+}

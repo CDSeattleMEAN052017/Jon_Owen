@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dojo Survey</title>
+        <!--  In this context '~' refers to the wwwroot folder -->
+        <link rel="stylesheet" href="./static/style.css"/>
+    </head>
+    <body>
+        <form action="/submit" method="POST">
+            <h3>Dojo Survey</h3>
+            <table>
+                <tr>
+                    <td><label name="name">Your Name: </label></td>
+                    <td><input type="text" name="name" value=""></td>
+                </tr>
+                <tr>
+                    <td><label name="location">Dojo Location: </label></td>
+                    <td><select name="location">
+                        <option value="SEA">Seattle</option>
+                        <option value="AUS">Austin</option>
+                        <option value="CHI">Chicago</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label name="language">Favorite Language: </label></td>
+                    <td><select name="language">
+                        <option value="python">Python</option>
+                        <option value="js">JavaScript</option>
+                        <option value="csharp">C#</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label name="comment">Comment  (optional):</label></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="comment" value="" ></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
